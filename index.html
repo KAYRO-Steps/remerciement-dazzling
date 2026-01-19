@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكراً لك - Joyaux d'Algérie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Ajouter Font Awesome pour l'icône WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F9C1D5',  // Rose poudré
+                        secondary: '#E2C044', // Or pâle
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-b from-primary to-white min-h-screen font-sans">
+    <div class="container mx-auto px-4 py-16 max-w-4xl">
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 text-center">
+            <!-- Logo/Header -->
+            <div class="mb-8 flex flex-col items-center">
+                <!-- Ajout du logo -->
+                <img src="img/logo.png" alt="Joyaux d'Algérie Logo" class="w-32 h-32 md:w-40 md:h-40 object-contain rounded-lg mb-4 shadow-xl">
+                
+            </div>
+
+            <!-- Thank You Message -->
+            <div class="mb-10">
+                
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">شكراً لك على طلبك!</h2>
+                <p class="text-lg text-gray-600 mb-6">سنقوم بالاتصال بك قريباً لتأكيد تفاصيل الطلب.</p>
+                
+            </div>
+
+           
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="/" class="bg-secondary hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                    <i data-feather="home"></i>
+                    العودة إلى الصفحة الرئيسية
+                </a>
+                <a href="/shop" class="bg-rose-400 hover:bg-pink-400 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center gap-2">
+                    <i data-feather="shopping-bag"></i>
+                    متجر Filyna Shop
+                </a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="mt-12">
+                <p class="text-gray-500 mb-4">تابعنا على مواقع التواصل الاجتماعي</p>
+                <div class="flex justify-center gap-6 items-center">
+                    <a href="https://www.facebook.com/profile.php?id=61586110067086" class="text-gray-500 hover:text-blue-600 transition duration-300 text-2xl">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kayrosteps?igsh=MW1wYWx2a253N283ag==" class="text-gray-500 hover:text-pink-600 transition duration-300 text-2xl">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <!-- WhatsApp avec Font Awesome - taille augmentée -->
+                    <a href="https://wa.me/213792690640" class="text-gray-500 hover:text-green-600 transition duration-300 text-3xl">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Augmenter la taille des icônes Feather
+        feather.replace({
+            width: 28,
+            height: 28
+        });
+        
+        // Generate random order number
+        document.getElementById('orderNumber').textContent = Math.floor(10000 + Math.random() * 90000);
+    </script>
+
+</body>
+</html>
